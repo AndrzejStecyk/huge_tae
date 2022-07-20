@@ -27,27 +27,27 @@ describe('TAE task', () => {
     //cy.get('#acceptCookieButton').should("not.be.disabled").trigger("click")
     //cy.get('#acceptCookieButton').click()
   })
-//  it('Picks from', { scrollBehavior: false }, () => {
-//    //cy.get('form').first().within(() => {
-//        cy.get('#fsc-origin-search')
-//        .should("exist")
-//        .clear()
-//        .trigger("click")
-//        .type('Polska')
-//        .type('{enter}')
-//        .should('have.value', 'Polska (PL)')
-//  })
-//
-//  it('Picks to', { scrollBehavior: false }, () => {
-//    //cy.get('form').first().within(() => {
-//        cy.get('#fsc-origin-search')
-//        .should("exist")
-//        .clear()
-//        .trigger("click")
-//        .type('Dubaj')
-//        .type('{enter}')
-//        .should('have.value', 'Dubaj (wszystkie lotniska)')
-//    })
+  it('Picks from', { scrollBehavior: false }, () => {
+    //cy.get('form').first().within(() => {
+        cy.get('#fsc-origin-search')
+        .should("exist")
+        .clear()
+        .trigger("click")
+        .type('Polska')
+        .type('{enter}')
+        .should('have.value', 'Polska (PL)')
+  })
+
+  it('Picks to', { scrollBehavior: false }, () => {
+    //cy.get('form').first().within(() => {
+        cy.get('#fsc-origin-search')
+        .should("exist")
+        .clear()
+        .trigger("click")
+        .type('Dubaj')
+        .type('{enter}')
+        .should('have.value', 'Dubaj (wszystkie lotniska)')
+    })
 
 
     it('Picks travelers', { scrollBehavior: false }, () => {
